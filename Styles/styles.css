@@ -813,58 +813,52 @@ body {
   position: relative;
   overflow: hidden;
 }
-.portfolio-overlay::before {
-  display: flex;
+/* .portfolio-overlay::before {
   content: "";
   position: absolute;
-  justify-content: center;
-  align-items: center;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
+  color: var(--text-color);
   opacity: 0;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-overlay:hover::before {
   opacity: 1;
-}
-.portfolio-link:hover .portfolio-overlay::before {
   transform: translateY(0);
-}
-
-.title-overlay {
-  position: relative;
-  /* overflow: hidden; */
-}
-/* .overlay-text {
-  position: relative;
-  overflow: hidden;
 } */
 
- .overlay-text {
+.overlay-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-text {
+
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+
   background: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
-  
-
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.55px;
-  color: var(--logo-color);
+  line-height: 1.56;
   letter-spacing: 0.03em;
-  /* opacity: 0; */
-  transform: translateY(0);
+  color: var(--text-color);
+
+  opacity: 0;
+  transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay-text:hover {
+
+.portfolio-list:hover .overlay-text {
   opacity: 1;
+  transform: translateY(0);
 }
 
 .portfolio-info {
