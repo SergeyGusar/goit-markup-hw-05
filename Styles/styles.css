@@ -164,14 +164,19 @@ li {
 .icon-envelope {
   fill: currentColor;
   margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .icon-smartphone {
   fill: currentColor;
   margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .contacts-link .link {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
