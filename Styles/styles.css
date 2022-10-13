@@ -248,6 +248,7 @@ li {
   pointer-events: none;
   visibility: hidden;
 }
+/* Modal */
 .modal {
   position: absolute;
   top: 50%;
@@ -255,10 +256,15 @@ li {
   transform: translate(-50%, -50%);
   min-width: 528px;
   min-height: 581px;
+  padding: 40px 39px 12px 41px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background: var(--text-color);
+
+}
+.modal-form {
+margin-top: 12px;
 }
 
 .modal .close-button {
@@ -270,6 +276,7 @@ li {
   height: 30px;
   top: 8px;
   right: 8px;
+  cursor: pointer;
   border-radius: 50%;
   background-color: var(--text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -279,6 +286,76 @@ li {
 .modal .close-button:focus {
   fill: var(--accent-color);
 }
+
+.modal-title {
+  padding-bottom: 12px;
+  padding-top: 40px;
+  font-weight: 700;
+font-size: 20px;
+line-height: 1.15px;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--secondary-color);
+ 
+}
+.form-element {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.form-element label {
+  margin-top: 4px;
+  font-weight: 400;
+font-size: 12px;
+line-height: 1.16px;
+
+letter-spacing: 0.01em;
+color: var(--primary-color);
+
+}
+.input-wrap {
+  position: relative;
+}
+.form-element svg {
+  position: absolute;
+  top: 25px;
+  left: 12px;
+  transform: translateY(-50%);
+ 
+
+}
+
+.form-element input {
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+.form-element input:focus {
+  border: 1px solid var(--accent-color);
+}
+.form-element input:focus + svg {
+  fill: var(--accent-color);
+}
+.form-element textarea {
+  margin-top: 4px;
+  height: 138px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+.placeholder {
+  font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5);
+}
+
 
 .hero-title {
   font-weight: 900;
